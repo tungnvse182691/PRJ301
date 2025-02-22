@@ -90,11 +90,11 @@
                     </div>
 
                     <button type="submit" class="submit-btn">Đăng nhập</button>
-                                        
+                    
                     <%
                         String message = request.getAttribute("message")+"";
                     %>
-                    <%=message%>
+                    <%=message.equals("null")?"":message%>
                 </form>
             </div>
         </div>
